@@ -1,0 +1,114 @@
+.timeline
+	color: #fff
+	+r(767)
+		overflow-y: auto
+		-webkit-overflow-scrolling: touch
+	&__wrap
+		margin: 60px 0
+		+r(767)
+			overflow-y: auto
+			-webkit-overflow-scrolling: touch
+		+r(480)
+			margin: 50px 0
+	&__title
+		background-image: linear-gradient(to right, rgba(247,97,161,0) 0%, rgb(247,97,161) 50%, rgba(247,97,161,0) 100%)
+		min-height: 122px
+		text-align: center
+		padding: 15px
+		margin-bottom: 50px
+		position: relative
+		z-index: -1
+		+r(480)
+			min-height: 98px
+			padding: 5px 10px
+			margin-bottom: 15px
+			h3
+				font-size: 26px
+			p
+				font-size: 16px
+			br
+				display: none
+		+r(360)
+			h3
+				font-size: 22px
+		h3
+			font-size: 32px
+			font-family: $GothamProBold
+		p
+			font-size: 18px
+			line-height: 1.2
+			font-family: $GothamProLight
+			span
+				font-family: $GothamProRegular
+	&__descr
+		max-width: 400px
+		float: right
+		+r(1140)
+			float: none
+			margin: 0 auto
+		+r(991)
+			p
+				text-align: center
+		p
+			font-family: $GothamProLight
+			font-size: 18px
+			margin-bottom: 30px
+			position: relative
+			+r(480)
+				font-size: 16px
+				margin-bottom: 15px
+			+r(360)
+				font-size: 15px
+				br
+					display: none
+			&:last-child
+				cursor: pointer
+				padding: 5px 20px
+				border-radius: 8px
+				text-align: center
+				background-color: rgba(0,0,0,0.4)
+				z-index: 9
+			&:first-child
+				z-index: -9
+			span
+				font-family: $GothamProMedium
+	&__form
+		max-width: 250px
+		float: left
+		+r(1140)
+			float: none
+			margin: 0 auto
+		button.form_button
+			border-radius: 30px
+			box-shadow: 0 5px 20px 0 rgba(232, 51, 96, 0.52)
+			width: 239px
+			height: 44px
+	&__closer
+		height: 50px
+		+r(480)
+			height: 40px
+		&-btn
+			width: 40px
+			height: 40px
+			margin: 0 auto
+			position: relative
+			transition: all 0.4s ease
+			cursor: pointer
+			border-radius: 50px
+			&:hover
+				transform: rotate(180deg) scale(1.2)
+			&::before,&::after
+				position: absolute
+				content: ''
+				top: 18px
+				left: 5px
+				width: 30px
+				height: 4px
+				background-color: #fff
+				border-radius: 2px
+			&::before
+				transform: rotate(-45deg)
+			&::after
+				transform: rotate(45deg)
+
+

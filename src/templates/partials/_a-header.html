@@ -1,0 +1,48 @@
+<header class="head section" style="background-image: url({{head_bg}});">
+  <div class="head__wrap">
+    <div class="container">
+      <!--start top of head-->
+      <div class="head__top">
+        <div class="row">
+        <div class="col-sm-7 col-xs-12">
+          <div class="head__logo">
+            <div class="head__icon">
+              <a href="http://dearia.co.il">
+              {{mixins.icon('logo')}}
+              </a>
+            </div>
+            <h1>Салон аппаратной <br>косметологии</h1>
+          </div>
+        </div>
+        <div class="col-sm-5 col-xs-12">
+          <div class="head__contact">
+            <a class="js_value call_you js_popup" data-form="Главная страница -Позвонить нам-" href=".mod_main" onclick="gtag('event', 'clickdopphone', { 'event_category': 'Knopka1', 'event_action': 'Najatie1', });">позвонить вам?</a>
+            <a class="head__phone" href="tel:0722798193">072-27-98-193</a>
+          </div>
+        </div>
+      </div>
+      </div>
+      <!--end top of head-->
+      <!--start content of head-->
+      <div class="head__content">
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="head__text-wrapper">
+              <div class="head__text">
+               <span>Запишитесь</span><br>
+               <span>на бесплатное</span><br>
+               <span>посещение</span><br>
+               <span>салона</span>
+              </div>
+            </div>
+            <div class="head__content__btn">
+              <a class="reg_btn js_popup js_value" data-form="Главная страница -Записаться-" href=".mod_main" onclick="gtag('event', 'clickdopphone', { 'event_category': 'Knopka2', 'event_action': 'Najatie2', });">Записаться</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--end content of head-->
+    </div>
+    {% include "partials/_parallax.html" %}
+  </div>
+</header>

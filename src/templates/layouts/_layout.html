@@ -1,0 +1,123 @@
+{% import "../layouts/_mixins.html" as mixins %}
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>{% if title %}{{ title }}{% else %}Template{% endif %}</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fff">
+    <meta name="format-detection" content="telephone=no">
+    <style>
+      .wrapper,body,html{margin:0!important}.preloader{padding:30vh 45px;overflow:hidden;text-align:center;position:fixed;height:100vh;width:100%;z-index:9999999;background-color:#a64db6;background-image:linear-gradient(to right,#f1ca74,#a64db6)}.preload__logo img{display:block;margin:0 auto;max-width:500px}.preload__loader{margin-top:50px}.spinner{margin:100px auto 0;width:70px;text-align:center}.spinner>div{width:18px;height:18px;background-color:#fff;border-radius:100%;display:inline-block;-webkit-animation:sk-bouncedelay 1.4s infinite ease-in-out both;animation:sk-bouncedelay 1.4s infinite ease-in-out both}.spinner .bounce1{-webkit-animation-delay:-.32s;animation-delay:-.32s}.spinner .bounce2{-webkit-animation-delay:-.16s;animation-delay:-.16s}@-webkit-keyframes sk-bouncedelay{0%,100%,80%{-webkit-transform:scale(0)}40%{-webkit-transform:scale(1)}}@keyframes sk-bouncedelay{0%,100%,80%{-webkit-transform:scale(0);transform:scale(0)}40%{-webkit-transform:scale(1);transform:scale(1)}}
+    </style>
+    <link rel="stylesheet" media="all" href="css/app.css?ver=1.05">
+    {% include "../layouts/_media-tags.html" %}
+    <!-- Google anal. start -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107883793-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-107883793-1');
+    </script>
+    <!-- Google anal. end -->
+    <!-- Yandex Metrika -->
+    <script type="text/javascript" >
+      (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+          try {
+            w.yaCounter46298067 = new Ya.Metrika({
+              id:46298067,
+              clickmap:true,
+              trackLinks:true,
+              accurateTrackBounce:true,
+              webvisor:true
+            });
+          } catch(e) { }
+        });
+        var n = d.getElementsByTagName("script")[0],
+          s = d.createElement("script"),
+          f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+        if (w.opera == "[object Opera]") {
+          d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+      })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/46298067" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- Yandex Metrika -->
+    <!-- Facebook Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+        n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+        document,'script','https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '518235855207742'); // Insert your pixel ID here.
+      fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+                   src="https://www.facebook.com/tr?id=518235855207742&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- DO NOT MODIFY -->
+    <!-- End Facebook Pixel Code -->
+  </head>
+  <body>
+  <!-- Preloader start -->
+  <div class="preloader">
+    <div class="preload__load">
+      <div class="preload__logo">
+        <img src="img/logo.svg" alt="DeAria">
+      </div>
+      <div class="preload__loader">
+        <div class="spinner">
+          <div class="bounce1"></div>
+          <div class="bounce2"></div>
+          <div class="bounce3"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Preloader end -->
+  <!-- BEGIN content -->
+  {% include "partials/_m-modal_main.html" %}
+  {% include "partials/_t-timeline-modal.html" %}
+  {% include "partials/_m-mobile_menu.html" %}
+  <div class="open_mob_menu">
+    <div class="mob_head">
+      <div class="mob_head__logo"><a href="#"><img src="{{logoMobile}}" alt="DeAria"></a></div>
+      <div class="mob_head__title">
+        <h1>Салон аппаратной <br>косметологии</h1>
+      </div>
+      <div class="mob_head__button">
+        <a class="js_value call_you js_popup" data-form="Фиксированное меню -Бесплатный звонок-" href=".mod_main" onclick="gtag('event', 'clickdopphone', { 'event_category': 'Knopka10', 'event_action': 'Najatie10', });">Бесплатный<br>звонок</a>
+      </div>
+    </div>
+    <div class="menu_lines js_toggle_menu">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+  <div class="wrapper">
+    {% block content %}{% endblock %}
+  </div>
+  <!-- END content -->
+  <!-- BEGIN scripts -->
+  <script type="text/javascript" src="lib/scrolloverflow.min.js"></script>
+  <script type="text/javascript" src="js/app.js?ver=1.04"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzUP0XTLNn4vaYPc1dpKIWu3Im7HfTXnI&libraries=places&language=ru&region=RU&callback=initMap"></script>
+  <!-- END scripts -->
+  <!-- BEGIN remarketing -->
+  <script type="text/javascript">
+    /* <![CDATA[ */
+    var google_conversion_id = 833137339;
+    var google_custom_params = window.google_tag_params;
+    var google_remarketing_only = true;
+    /* ]]> */
+  </script>
+  <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js"></script>
+  <noscript><div style="display:inline;"><img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/833137339/?guid=ON&amp;script=0"/></div></noscript>
+  <!-- END remarketing -->
+  </body>
+</html>

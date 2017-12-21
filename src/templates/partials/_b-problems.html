@@ -1,0 +1,161 @@
+<section class="problem section">
+  <div class="problem__wrap">
+    <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-xs-12 col-sm-12">
+        <div class="problem__main">
+          <div class="problem__text">
+          <div class="problem__step">
+            <div class="problem__title">
+              {{mixins.icon('tabs')}}
+              {{mixins.icon('box_bottom')}}
+              <ul class="problem__mob-prob-list js_mob_list">
+                <li data-tab="tab_wrinkles"><span>Морщины</span></li>
+                <li data-tab="tab_pigmentation"><span>Пигментация</span></li>
+                <li data-tab="tab_oily_skin"><span>Жирная кожа</span></li>
+                <li data-tab="tab_couperose"><span>Купероз</span></li>
+                <li data-tab="tab_unwanted_hair"><span>Нежелательные <br> волосы</span></li>
+                <li data-tab="tab_articulation"><span>Отеченость</span></li>
+                <li data-tab="tab_dry_skin"><span>Сухая кожа</span></li>
+              </ul>
+              <div class="problem__title--layer">
+                <span>проблема</span>
+                <div class="problem__btn-mob js_mob_open_list">
+                  список {{mixins.icon('footer_arr')}}
+                </div>
+              </div>
+              <h3 class="current_tab tab_wrinkles">
+                <span>МОРЩИНЫ</span> видимые складки кожи,<br>
+                потеря эластичности и упругости,<br>
+                возрастные изменения.
+              </h3>
+              <h3 class="tab_pigmentation">
+                <span>Пигментация</span> светло коричневые и темно коричневые пятна, веснушки.
+              </h3>
+              <h3 class="tab_oily_skin">
+                <span>ЖИРНАЯ КОЖА</span> жирный блеск, широкие поры, воспаления на коже.
+              </h3>
+              <h3 class="tab_couperose">
+                <span>КУПЕРОЗ</span> расширенные, видимые сосуды и сосудистые звездочки красного цвета.
+              </h3>
+              <h3 class="tab_unwanted_hair">
+                <span>НЕЖЕЛАТЕЛЬНЫЕ ВОЛОСЫ</span>
+              </h3>
+              <h3 class="tab_articulation">
+                <span>ОТЕЧНОСТЬ</span> избыточное накопление жидкости, мешки под глазами.
+              </h3>
+              <h3 class="tab_dry_skin">
+                <span>СУХАЯ КОЖА</span> шелушения, ощущения стянутости, постоянная потребность в питательных кремах.
+              </h3>
+          </div>
+          </div>
+          <div class="problem__step">
+            <ul class="problem__list tab_wrinkles current_tab">
+              <li>Безинъекционная мезотерапия</li>
+              <li>Термолифтинг</li>
+              <li>Микротоковая терапия</li>
+              <li>Альгинатная маска</li>
+            </ul>
+            <ul class="problem__list tab_pigmentation">
+              <li>Пилинг</li>
+              <li>Лазерная шлифовка</li>
+              <li>Фототерапия</li>
+              <li>Дермобразия</li>
+            </ul>
+            <ul class="problem__list tab_oily_skin">
+              <li>Дезинкрустация</li>
+              <li>Глубокая чистка (пилинги и шлифовка лица)</li>
+            </ul>
+            <ul class="problem__list tab_couperose">
+              <li>Лечение лазером</li>
+              <li>Электрокоагуляция</li>
+              <li>Фототерапия</li>
+              <li>Лимфодренаж</li>
+            </ul>
+            <ul class="problem__list tab_unwanted_hair">
+              <li>Фототерапия</li>
+              <li>Лазерное удаление</li>
+              <li>Аппарат Элос</li>
+            </ul>
+            <ul class="problem__list tab_articulation">
+              <li>Лимфодренажный массаж</li>
+              <li>Альгинатная маска</li>
+            </ul>
+            <ul class="problem__list tab_dry_skin">
+              <li>Маска с гиалуроном</li>
+              <li>Биоревитализация</li>
+              <li>Альгинатная маска</li>
+            </ul>
+          </div>
+          <div class="problem__step">
+            <div class="problem__result">
+            <div class="problem__result--title">результат</div>
+            <div class="problem__result--descr tab_wrinkles current_tab">
+              Глубокий лифтинг кожи (подтяжка) <br>
+              Разглаживаются глубокие мимические морщины. <br>
+              Омолаживающий эффект.
+            </div>
+            <div class="problem__result--descr tab_pigmentation">
+              Лицо приобретает ровный, персиковый цвет.
+            </div>
+            <div class="problem__result--descr tab_oily_skin">
+              Убираются воспаления, жирный блеск, очищаются поры от черных точек, кожа приобретает свежесть и убирается серый оттенок
+            </div>
+            <div class="problem__result--descr tab_couperose">
+              Снимается воспаление сосудов, исчезают видимые сосуды и звездочки красного цвета.
+            </div>
+            <div class="problem__result--descr tab_unwanted_hair">
+              Убираются нежелательные волосы ;-)
+            </div>
+            <div class="problem__result--descr tab_articulation">
+              Убирается отечность лица и мешки под глазами.
+            </div>
+            <div class="problem__result--descr tab_dry_skin">
+              Кожа становится бархатной на ощупь, восстанавливается нормальная работа обменных процессов. Оживление кожи.
+            </div>
+          </div>
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="col-md-6 hidden-xs hidden-sm">
+        <div class="problem__girl">
+          <div class="problem__icons js_tab_for">
+            <img data-tab="tab_wrinkles" class="wrinkles" src="img/wrinkles.svg" alt="wrinkles">
+            <img data-tab="tab_pigmentation" class="pigmentation" src="img/pigmentation.svg" alt="pigmentation">
+            <img data-tab="tab_oily_skin" class="oily_skin" src="img/oily_skin.svg" alt="oily_skin">
+            <img data-tab="tab_couperose" class="couperose" src="img/couperose.svg" alt="couperose">
+            <img data-tab="tab_unwanted_hair" class="unwanted_hair" src="img/unwanted_hair.svg" alt="unwanted_hair">
+            <img data-tab="tab_articulation" class="articulation" src="img/articulation.svg" alt="articulation">
+            <img data-tab="tab_dry_skin" class="dry_skin" src="img/dry_skin.svg" alt="dry_skin">
+          </div>
+          <div class="problem__btn js-prob_btn">{{mixins.icon('btn_list')}}<br>
+            показать<br>
+            список
+          </div>
+          <div class="problem__hov-list js-hov_list">
+            <div class="problem__closer-btn js-prob_btn"></div>
+            <ul class="problem__problems js_tab_for">
+              <li data-tab="tab_wrinkles"><span>Морщины</span></li>
+              <li data-tab="tab_pigmentation"><span>Пигментация</span></li>
+              <li data-tab="tab_oily_skin"><span>Жирная кожа</span></li>
+              <li data-tab="tab_couperose"><span>Купероз</span></li>
+              <li data-tab="tab_unwanted_hair"><span>Нежелательные волосы</span></li>
+              <li data-tab="tab_articulation"><span>Отеченость</span></li>
+              <li data-tab="tab_dry_skin"><span>Сухая кожа</span></li>
+            </ul>
+          </div>
+          <div class="problem__girl-image" style="background-image: url({{svg_problem_girl}});"></div>
+        </div>
+      </div>
+    </div>
+    <div class="problem__call-back">
+      <div class="problem__call-text">
+        Запишитесь сейчас и мы<br>
+        <span>решим Вашу проблему</span>
+      </div>
+      <a class="call_you js_popup js_value" data-form="Блок -Проблемы и решения-"  href=".mod_main" onclick="gtag('event', 'clickdopphone', { 'event_category': 'Knopka4', 'event_action': 'Najatie4', });" >Записаться</a>
+    </div>
+  </div>
+  </div>
+</section>

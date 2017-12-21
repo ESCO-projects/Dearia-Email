@@ -1,0 +1,123 @@
+.footer
+	background-color: #fff
+	&__wrap
+		min-height: 250px
+		position: relative
+		+rh(550)
+			padding-top: 50px
+	&__contacts
+		max-width: 500px
+		margin: -35px auto 0
+		width: 100%
+		min-height: 70px
+		border-radius: 8px
+		padding-left: 20px
+		background-color: rgb(255, 255, 255)
+		box-shadow: 0px 6px 18px 0px rgba(0, 0, 0, 0.1)
+		+rh(500)
+			margin: 30px auto 0
+		+r(500)
+			max-width: 300px
+			padding: 0
+			.icon
+				float: left
+				margin: 26px
+			a
+				display: block
+				&:first-child
+					border-bottom: 1px solid #c2c2c2
+				&::after
+					display: none
+		.icon
+			fill: #e83360
+			margin-bottom: -3px
+		.icon-mail
+			margin-left: 34px
+			margin-right: 16px
+			font-size: 18px
+		.icon-phone
+			margin-left: 12px
+			margin-right: 10px
+			font-size: 20px
+		a
+			display: inline-block
+			color: #919bb2
+			font-family: $GothamProMedium
+			font-size: 18px
+			line-height: 70px
+			position: relative
+			&:first-child
+				&::after
+					position: absolute
+					content: ''
+					right: 0
+					top: 12px
+					width: 1px
+					height: 47px
+					background-color: #c2c2c2
+	&__go-top
+		min-height: 80px
+		border-bottom: 1px solid #eaebef
+		font-family: $GothamProMedium
+		font-size: 18px
+		color: #919bb2
+		text-align: center
+		padding-top: 30px
+		padding-bottom: 15px
+		+r(360)
+			font-size: 15px
+		br
+			display: none
+			+r(700)
+				display: block
+	&__buttons
+		text-align: center
+		min-height: 80px
+		border-bottom: 1px solid #eaebef
+		div
+			height: 100%
+			float: left
+			+r(730)
+				float: none
+				width: 100%
+		.icon-logo
+			fill: #4d5470
+			font-size: 46px
+	&__logo
+		padding-top: 17px
+		width: 25%
+		border-right: 1px solid #eaebef
+	&__call-back
+		width: 50%
+		a
+			padding-top: 3px
+			display: block
+			margin: 20px auto 0
+	&__socials
+		width: 25%
+		border-left: 1px solid #eaebef
+		+r(730)
+			padding-bottom: 15px
+		a
+			display: inline-block
+			margin: 30px 12px 0
+		.icon
+			font-size: 20px
+			fill: #a1a7be
+			transition: all 0.3s ease
+			&:hover
+				fill: #283452
+		.icon-vk
+			font-size: 16px
+	&__copy
+		min-height: 64px
+		text-align: center
+		padding-top: 20px
+		p
+			font-size: 14px
+			color: #283452
+			opacity: 0.5
+			letter-spacing: 1px
+			font-family: $MyriadProRegular
+			span
+				font-family: $GothamProMedium

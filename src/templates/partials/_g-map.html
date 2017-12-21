@@ -1,0 +1,23 @@
+<section class="g_map section">
+  <div id="right-panel" class="js_toggle_panel"></div>
+  <div id="map"></div>
+  <input id="destination-input" class="controls g_map__input" type="text" placeholder="Введите Ваш адрес для показа маршрута">
+  <div id="mode-selector" class="controls g_map__input--types">
+    <label for="changemode-walking" title="пешком">
+      <input class="walking" type="radio" name="type" id="changemode-walking">
+    </label>
+    <label for="changemode-transit" title="транспорт">
+      <input class="transit" type="radio" name="type" id="changemode-transit" checked="checked">
+    </label>
+    <label for="changemode-driving" title="свое авто">
+      <input class="driving" type="radio" name="type" id="changemode-driving">
+    </label>
+    <div class="hide_panel js_toggle_direction">
+      {{mixins.icon('footer_arr')}}
+    </div>
+  </div>
+
+  <script>
+    function initMap(){var e=new google.maps.Map(document.getElementById("map"),{mapTypeControl:!1,center:myPosition,zoom:16,streetViewControl:!1,fullscreenControl:!1,scrollwheel:!1});myMarker=new google.maps.Marker({position:myPosition,map:e}),new AutocompleteDirectionsHandler(e)}function AutocompleteDirectionsHandler(e){this.map=e,this.originPlaceId=myId,this.destinationPlaceId=null,this.travelMode="TRANSIT";var t=document.getElementById("destination-input"),i=document.getElementById("mode-selector");this.directionsService=new google.maps.DirectionsService,this.directionsDisplay=new google.maps.DirectionsRenderer,this.directionsDisplay.setMap(e);var o=new google.maps.places.Autocomplete(t,{placeIdOnly:!0});this.setupClickListener("changemode-walking","WALKING"),this.setupClickListener("changemode-transit","TRANSIT"),this.setupClickListener("changemode-driving","DRIVING"),this.setupPlaceChangedListener(o,"DEST"),this.map.controls[google.maps.ControlPosition.TOP_LEFT].push(t),this.map.controls[google.maps.ControlPosition.TOP_LEFT].push(i),this.directionsDisplay.setPanel(document.getElementById("right-panel"))}var myPosition={lat:31.9883677,lng:34.7724464},myId="ChIJQ4e7q4CzAhURUxy7S8muULU",panelDirection=document.getElementById("right-panel"),panelTransport=document.getElementById("mode-selector"),myMarker;AutocompleteDirectionsHandler.prototype.setupClickListener=function(e,t){var i=document.getElementById(e),o=this;i.addEventListener("click",function(){o.travelMode=t,o.route()})},AutocompleteDirectionsHandler.prototype.setupPlaceChangedListener=function(e,t){var i=this;e.bindTo("bounds",this.map),e.addListener("place_changed",function(){var t=e.getPlace();return t.place_id?(i.destinationPlaceId=t.place_id,void i.route()):void window.alert("пожалуйста выберите со списка")})},AutocompleteDirectionsHandler.prototype.route=function(){if(this.destinationPlaceId){var e=this;this.directionsService.route({origin:{placeId:this.originPlaceId},destination:{placeId:this.destinationPlaceId},travelMode:this.travelMode,provideRouteAlternatives:!0},function(t,i){"OK"===i?(e.directionsDisplay.setDirections(t),panelDirection.classList.add("show_map"),panelTransport.classList.add("show_map"),myMarker.setMap(null)):window.alert("НЕДОПУСТИМЫЙ МАРШРУТ")})}};
+  </script>
+</section>

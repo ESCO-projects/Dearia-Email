@@ -1,0 +1,32 @@
+<div class="mod mod_main mfp-hide zoom-anim-dialog">
+  <div class="mod__content">
+    <div class="mod__form">
+      <div class="mod__title">
+        <span>Записаться <br>
+        на</span> <span>бесплатное</span> <br>
+        <span>посещение салона</span>
+      </div>
+      <form class="mod__fields js_form">
+        <input type="hidden" name="DATA[TITLE]" value="Лендинг DeAria главная форма">
+        <input type="hidden" name="DATA[SOURCE_ID]" value="WEB">
+        <input type="hidden" name="DATA[WEB_OTHER]" value="DeAria">
+        <input class="form_id" type="hidden" name="DATA[SOURCE_DESCRIPTION]">
+        <label class="name_user">
+          <span>Ваше имя</span>
+          <input class="js_input" name="DATA[NAME]" data-input="name_user"  type="text" required autocomplete="off">
+        </label>
+        <label class="tel_num">
+          <span>Ваш номер телефона</span>
+          <input class="js_input js_tel_mask" name="DATA[PHONE_WORK]" data-input="tel_num"  type="tel" required autocomplete="off">
+        </label>
+        <button class="form_button" onclick="gtag('event', 'clickdopphone', { 'event_category': 'Knopka8', 'event_action': 'Najatie8', });">Отправить</button>
+      </form>
+    </div>
+    <div class="mod__image">
+       <img src="{{modal}}" alt="girl">
+    </div>
+    <div class="mod__closer js_close_mod">
+      <div class="mod__closer--lines"></div>
+    </div>
+  </div>
+</div>

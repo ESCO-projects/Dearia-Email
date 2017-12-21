@@ -1,0 +1,106 @@
+.about
+	background-color: #A99A92
+	background-repeat: no-repeat
+	background-position: 70% 50%
+	background-size: 70%
+	+r(991)
+		background-image: none!important
+	&__wrap
+		padding: 50px 0
+		a
+			margin: 20px auto -60px
+			width: 230px
+			height: 56px
+			border-radius: 30px
+			padding-top: 12px
+			letter-spacing: 0.05em
+			font-size: 20px
+			box-shadow: 0 0 20px 5px #a99a92
+			+r(480)
+				margin: 20px auto -50px
+			+r(400)
+				margin: 20px auto -40px
+	&__content
+		height: auto
+		position: relative
+		padding: 0 40px 30px
+		border: 3px solid rgba(0, 0, 0, 0.2)
+		border-top-color: transparent
+		text-align: center
+		margin: 70px 0
+		+r(480)
+			padding: 0 20px 20px
+		+r(400)
+			padding: 0 10px 10px
+		.icon-arrow_up
+			transform: rotate(180deg)
+			font-size: 20px
+			fill: rgba(0,0,0,0.4)
+			margin: 20px 0 0
+		&::after,&::before
+			border-radius: 1px
+			content: ''
+			top: -3px
+			position: absolute
+			height: 3px
+			width: 17%
+			background-color: rgba(0, 0, 0, 0.2)
+		&::before
+			left: -3px
+		&::after
+			right: -3px
+	&__title
+		margin-top: -50px
+		text-align: center
+		font-size: 80px
+		line-height: 80px
+		font-family: $GothamProBold
+		background: #f97794 linear-gradient(to right, #623aa2 25%, #f97794 50%, #623aa2 75%, #f97794 100%)
+		background-size: 400% 400%
+		background-position: 0 50%
+		background-clip: text
+		text-fill-color: transparent
+		-webkit-background-clip: text
+		-webkit-text-fill-color: transparent
+		animation: shine 13s linear infinite
+		+r(600)
+			font-size: 70px
+		+r(480)
+			font-size: 60px
+		+r(400)
+			font-size: 50px
+		+r(360)
+			font-size: 44px
+		&--sub
+			margin-top: -45px
+			color: #fff
+			font-size: 48px
+			font-family: $GothamProMedium
+			text-align: center
+			+r(600)
+				font-size: 38px
+			+r(480)
+				font-size: 32px
+				margin-top: -45px
+			+r(400)
+				margin-top: -40px
+				font-size: 28px
+			+r(360)
+				font-size: 26px
+	&__descr
+		color: #000000
+		font-size: 20px
+		font-family: $GothamProMedium
+		margin-top: 15px
+		text-align: left
+		p
+			white-space: normal
+			text-indent: 20px
+			margin-bottom: 5px
+			span
+				font-family: $GothamProBold
+		+r(991)
+			font-size: 18px
+		+r(480)
+			font-size: 16px
+

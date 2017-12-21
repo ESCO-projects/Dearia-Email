@@ -1,0 +1,162 @@
+.head
+	box-shadow: inset 0 60px 100px -20px rgba(0,0,0,0.25)
+	background-color: #FACFD8
+	+cover
+	background-position: top center
+	position: relative
+	+r(580)
+		background-position: 60%
+	+r(420)
+		background-position: 65%
+	&__wrap
+		height: 100%
+		min-height: 600px
+	&__top
+		margin-top: 34px
+		+r(900)
+			display: none
+	h1
+		font-family: $GothamProLight
+		font-weight: lighter
+		font-size: 16px
+		line-height: 1.2
+		color: #fff
+		padding-top: 3px
+		letter-spacing: 0.005em
+	&__logo
+		opacity: 0
+		transition: all 0.5s ease
+		transform: translateY(-100px)
+	&__icon
+		float: left
+		margin-right: 30px
+		width: 197px
+		position: relative
+		z-index: 9
+		&::after
+			position: absolute
+			content: ''
+			top: -3px
+			right: 0
+			height: 100%
+			width: 1px
+			background-image: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgb(255,255,255) 50%, rgba(255,255,255,0) 100%)
+			opacity: 0.302
+	.icon-logo
+		font-size: 50px
+		fill: #fff
+	&__contact
+		margin-top: -5px
+		position: relative
+		z-index: 9
+		a
+			float: right
+			line-height: 37px
+			position: relative
+			z-index: 9
+	&__phone
+		font-size: 20px
+		color: #FFF
+		font-family: $GothamProMedium
+		margin-right: 15px
+	&__content
+		margin-top: 200px
+		+r(767)
+			margin-top: 120px
+	&__text-wrapper
+		max-width: 600px
+		position: relative
+		z-index: 9
+		transform: translate(-100%, 100%) scale(0)
+		transition: all 0.5s ease-in
+		+r(900)
+			transform: translate(0, 0) scale(1) !important
+		+r(480)
+			margin-bottom: 40px
+		+r(380)
+			margin-top: 20px
+			margin-bottom: 60px
+		&::after
+			position: absolute
+			top: -130px
+			left: -70px
+			content: ''
+			border-radius: 50%
+			background: linear-gradient(-150deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 100%)
+			width: 590px
+			height: 591px
+			transition: all 0.3s ease
+			+rh(720)
+				top: -100px
+				left: -50px
+				width: 450px
+				height: 450px
+			+r(767)
+				display: none
+	&__text
+		font-size: 66px
+		line-height: 1
+		text-align: left
+		background: #f97794 linear-gradient(to right, #623aa2 25%, #f97794 50%, #623aa2 75%, #f97794 100%)
+		background-size: 400% 400%
+		background-position: 0 50%
+		background-clip: text
+		text-fill-color: transparent
+		-webkit-background-clip: text
+		-webkit-text-fill-color: transparent
+		animation: shine 13s linear infinite
+		position: relative
+		z-index: 2
+		transition: all 0.3s ease
+		+r(540)
+			font-size: 55px
+		+r(480)
+			font-size: 44px
+		+r(380)
+			font-size: 37px
+		span
+			&:nth-child(1)
+				font-family: $GothamProBold
+			&:nth-child(3)
+				font-family: $GothamProRegular
+			&:nth-child(5)
+				font-family: $GothamProMedium
+			&:last-child
+				font-family: $GothamProLight
+	&__content__btn
+		position: relative
+		margin-top: 30px
+		margin-left: 40px
+		display: inline-block
+		z-index: 9
+		&::after
+			position: absolute
+			content: ''
+			width: 60px
+			height: 60px
+			right: -30px
+			top: -30px
+			background-size: cover
+			background-image: url(../img/q.svg)
+		+r(420)
+			margin: 30px auto 0
+			width: 240px
+			display: block
+		a
+			position: relative
+			z-index: 2
+
+@keyframes shine
+	0%
+		background-position: 0 50%
+	50%
+		background-position: 100% 50%
+	100%
+		background-position: 0 50%
+
+
+
+
+
+
+

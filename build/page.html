@@ -1,0 +1,759 @@
+<!doctype html>
+<html lang="ru">
+
+  <head>
+    <meta charset="utf-8">
+    <title>DeAria - центр эстетической медицины и аппаратной косметологии. Более 100 видов косметологических услуг. Запишись!</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fff">
+    <meta name="format-detection" content="telephone=no">
+    <style>
+      .wrapper,
+      body,
+      html {
+        margin: 0!important
+      }
+
+      .preloader {
+        padding: 30vh 45px;
+        overflow: hidden;
+        text-align: center;
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        z-index: 9999999;
+        background-color: #a64db6;
+        background-image: linear-gradient(to right, #f1ca74, #a64db6)
+      }
+
+      .preload__logo img {
+        display: block;
+        margin: 0 auto;
+        max-width: 500px
+      }
+
+      .preload__loader {
+        margin-top: 50px
+      }
+
+      .spinner {
+        margin: 100px auto 0;
+        width: 70px;
+        text-align: center
+      }
+
+      .spinner>div {
+        width: 18px;
+        height: 18px;
+        background-color: #fff;
+        border-radius: 100%;
+        display: inline-block;
+        -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+        animation: sk-bouncedelay 1.4s infinite ease-in-out both
+      }
+
+      .spinner .bounce1 {
+        -webkit-animation-delay: -.32s;
+        animation-delay: -.32s
+      }
+
+      .spinner .bounce2 {
+        -webkit-animation-delay: -.16s;
+        animation-delay: -.16s
+      }
+
+      @-webkit-keyframes sk-bouncedelay {
+        0%,
+        100%,
+        80% {
+          -webkit-transform: scale(0)
+        }
+        40% {
+          -webkit-transform: scale(1)
+        }
+      }
+
+      @keyframes sk-bouncedelay {
+        0%,
+        100%,
+        80% {
+          -webkit-transform: scale(0);
+          transform: scale(0)
+        }
+        40% {
+          -webkit-transform: scale(1);
+          transform: scale(1)
+        }
+      }
+
+    </style>
+    <link rel="stylesheet" media="all" href="css/app.css?ver=1.05">
+    <meta name="description" content="DeAria - центр эстетической медицины и аппаратной косметологии. Более 100 видов косметологических услуг. Запишись!">
+    <!-- Open Graph data -->
+    <meta property="og:title" content="DeAria - центр аппаратной косметологии в Израиле.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://dearia.co.il">
+    <meta property="og:image" content="http://dearia.co.il/img/og_image/dearia.jpg">
+    <meta property="og:description" content="DeAria - центр эстетической медицины и аппаратной косметологии. Более 100 видов косметологических услуг. Запишись!">
+    <meta property="og:locale" content="ru_RU">
+    <!-- Open Graph data end-->
+    <!-- Favicon start -->
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Favicon end -->
+    <!-- Google anal. start -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107883793-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag()
+      {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'UA-107883793-1');
+
+    </script>
+    <!-- Google anal. end -->
+    <!-- Yandex Metrika -->
+    <script type="text/javascript">
+      (function(d, w, c)
+      {
+        (w[c] = w[c] || []).push(function()
+        {
+          try
+          {
+            w.yaCounter46298067 = new Ya.Metrika(
+            {
+              id: 46298067,
+              clickmap: true,
+              trackLinks: true,
+              accurateTrackBounce: true,
+              webvisor: true
+            });
+          }
+          catch (e)
+          {}
+        });
+        var n = d.getElementsByTagName("script")[0],
+          s = d.createElement("script"),
+          f = function()
+          {
+            n.parentNode.insertBefore(s, n);
+          };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+        if (w.opera == "[object Opera]")
+        {
+          d.addEventListener("DOMContentLoaded", f, false);
+        }
+        else
+        {
+          f();
+        }
+      })(document, window, "yandex_metrika_callbacks");
+
+    </script> <noscript><div><img src="https://mc.yandex.ru/watch/46298067" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- Yandex Metrika -->
+    <!-- Facebook Pixel Code -->
+    <script>
+      ! function(f, b, e, v, n, t, s)
+      {
+        if (f.fbq) return;
+        n = f.fbq = function()
+        {
+          n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = '2.0';
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s)
+      }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '518235855207742'); // Insert your pixel ID here.
+      fbq('track', 'PageView');
+
+    </script> <noscript><img height="1" width="1" style="display:none"
+                   src="https://www.facebook.com/tr?id=518235855207742&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- DO NOT MODIFY -->
+    <!-- End Facebook Pixel Code -->
+  </head>
+
+  <body>
+    <!-- Preloader start -->
+    <div class="preloader">
+      <div class="preload__load">
+        <div class="preload__logo"> <img src="img/logo.svg" alt="DeAria"> </div>
+        <div class="preload__loader">
+          <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Preloader end -->
+    <!-- BEGIN content -->
+    <div class="mod mod_main mfp-hide zoom-anim-dialog">
+      <div class="mod__content">
+        <div class="mod__form">
+          <div class="mod__title"> <span>Записаться <br>
+        на</span> <span>бесплатное</span> <br> <span>посещение салона</span> </div>
+          <form class="mod__fields js_form"> <input type="hidden" name="DATA[TITLE]" value="Лендинг DeAria главная форма"> <input type="hidden" name="DATA[SOURCE_ID]" value="WEB"> <input type="hidden" name="DATA[WEB_OTHER]" value="DeAria"> <input class="form_id" type="hidden" name="DATA[SOURCE_DESCRIPTION]">            <label class="name_user">
+          <span>Ваше имя</span>
+          <input class="js_input" name="DATA[NAME]" data-input="name_user"  type="text" required autocomplete="off">
+        </label> <label class="tel_num">
+          <span>Ваш номер телефона</span>
+          <input class="js_input js_tel_mask" name="DATA[PHONE_WORK]" data-input="tel_num"  type="tel" required autocomplete="off">
+        </label> <button class="form_button" onclick="gtag('event', 'clickdopphone', { 'event_category': 'Knopka8', 'event_action': 'Najatie8', });">Отправить</button> </form>
+        </div>
+        <div class="mod__image"> <img src="img/modal_girl.png" alt="girl"> </div>
+        <div class="mod__closer js_close_mod">
+          <div class="mod__closer--lines"></div>
+        </div>
+      </div>
+    </div>
+    <section class="timeline mfp-hide zoom-anim-dialog">
+      <div class="timeline__wrap">
+        <div class="timeline__closer">
+          <div class="timeline__closer-btn js_close_popup"></div>
+        </div>
+        <div class="timeline__title">
+          <h3>Мы ничего не продаем</h3>
+          <p> Вся информация на сайте, описывает разовое<br> <span>бесплатное</span> посещение нашего салона. </p>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="timeline__descr">
+                <p> Вам не понадобиться ни за что платить.<br> Это мероприятие организовано в рамках PR акции салона. </p>
+                <p class="js_focus_input"> Заполните форму, и наш <br> менеджер <span>свяжется с Вами</span> </p>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="timeline__form">
+                <form class="mod__fields js_form"> <input type="hidden" name="DATA[TITLE]" value="Лендинг DeAria"> <input type="hidden" name="DATA[SOURCE_ID]" value="WEB"> <input type="hidden" name="DATA[SOURCE_DESCRIPTION]" value="Таймлайн форма"> <label class="name_user">
+                <span>Ваше имя</span>
+                <input class="js_input js_focus" name="DATA[NAME]" data-input="name_user"  type="text" required autocomplete="off">
+              </label> <label class="tel_num">
+                <span>Ваш номер телефона</span>
+                <input class="js_input js_tel_mask" name="DATA[PHONE_WORK]" data-input="tel_num"  type="tel" required autocomplete="off">
+              </label> <button class="form_button" onclick="gtag('event', 'clickdopphone', { 'event_category': 'Knopka9', 'event_action': 'Najatie9', });">Отправить</button> </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="mob_menu_wrap js_mobile_menu">
+      <ul class="mob_mnu" id="m_menu">
+        <li data-menuanchor="main" class="active js_toggle_menu"> <a href="#main">Главная</a> </li>
+        <li data-menuanchor="about" class="js_toggle_menu"> <a href="#about">Кто мы</a> </li>
+        <li data-menuanchor="problems" class="js_toggle_menu"> <a href="#problems">Проблемы и решения</a> </li>
+        <li data-menuanchor="how" class="js_toggle_menu"> <a href="#how">Как это происходит</a> </li>
+        <li data-menuanchor="get" class="js_toggle_menu"> <a href="#get">Что Вы получите</a> </li>
+        <li data-menuanchor="action" class="js_toggle_menu"> <a href="#action">Время ограничено</a> </li>
+        <li data-menuanchor="gmap" class="js_toggle_menu"> <a href="#gmap">Как добраться</a> </li>
+        <li data-menuanchor="contacts" class="js_toggle_menu"> <a href="#contacts">Контакты</a> </li>
+      </ul>
+    </div>
+    <div class="open_mob_menu">
+      <div class="mob_head">
+        <div class="mob_head__logo"><a href="#"><img src="img/logo_mobile.svg" alt="DeAria"></a></div>
+        <div class="mob_head__title">
+          <h1>Салон аппаратной <br>косметологии</h1>
+        </div>
+        <div class="mob_head__button"> <a class="js_value call_you js_popup" data-form="Фиксированное меню -Бесплатный звонок-" href=".mod_main" onclick="gtag('event', 'clickdopphone', { 'event_category': 'Knopka10', 'event_action': 'Najatie10', });">Бесплатный<br>звонок</a> </div>
+      </div>
+      <div class="menu_lines js_toggle_menu">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <div class="wrapper">
+      <header class="head section" style="background-image: url(img/header.jpg);">
+        <div class="head__wrap">
+          <div class="container">
+            <!--start top of head-->
+            <div class="head__top">
+              <div class="row">
+                <div class="col-sm-7 col-xs-12">
+                  <div class="head__logo">
+                    <div class="head__icon"> <a href="http://dearia.co.il">
+              
+<svg class="icon icon-logo"><use xlink:href="img/sprite.svg#icon-logo"></use></svg>
+
+              </a> </div>
+                    <h1>Салон аппаратной <br>косметологии</h1>
+                  </div>
+                </div>
+                <div class="col-sm-5 col-xs-12">
+                  <div class="head__contact"> <a class="js_value call_you js_popup" data-form="Главная страница -Позвонить нам-" href=".mod_main" onclick="gtag('event', 'clickdopphone', { 'event_category': 'Knopka1', 'event_action': 'Najatie1', });">позвонить вам?</a> <a class="head__phone"
+                      href="tel:0722798193">072-27-98-193</a> </div>
+                </div>
+              </div>
+            </div>
+            <!--end top of head-->
+            <!--start content of head-->
+            <div class="head__content">
+              <div class="row">
+                <div class="col-xs-12">
+                  <div class="head__text-wrapper">
+                    <div class="head__text"> <span>Запишитесь</span><br> <span>на бесплатное</span><br> <span>посещение</span><br> <span>салона</span> </div>
+                  </div>
+                  <div class="head__content__btn"> <a class="reg_btn js_popup js_value" data-form="Главная страница -Записаться-" href=".mod_main" onclick="gtag('event', 'clickdopphone', { 'event_category': 'Knopka2', 'event_action': 'Najatie2', });">Записаться</a> </div>
+                </div>
+              </div>
+            </div>
+            <!--end content of head-->
+          </div>
+          <div class="parallax_container">
+            <div id="parallax_scene">
+              <div data-depth="0.4"><img src="img/lep1.png" alt=""></div>
+              <div data-depth="0.9"><img src="img/lep2.png" alt=""></div>
+              <div data-depth="1.2"><img src="img/lep3.png" alt=""></div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section class="section about" style="background-image: url(img/Girl_about.jpg);">
+        <div class="about__wrap">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6 col-md-7 col-sm-12">
+                <div class="about__content">
+                  <div class="about__title"> Кто мы? </div>
+                  <div class="about__title--sub"> и что предлагаем </div>
+                  <div class="about__descr">
+                    <p><span>Мы это центр эстетической медицины и аппаратной косметологии.</span></p>
+                    <p>В нашем арсенале более <span>100</span> видов косметологических услуг и решений эстетических проблем.</p>
+                    <p>Мы помогаем сохранить вашу природную красоту, держать руку на пульсе всех новых тенденций в области косметологии.</p>
+                    <p>Мы предлагаем <span>БЕСПЛАТНО</span> пройти проверку кожного покрова и <span>3 процедуры</span> по уходу и омоложению лица.</p>
+                    <p><span>Запишись сейчас, время и свободные кабинеты наших специалистов ограничены!</span></p>
+                  </div> <svg class="icon icon-arrow_up"><use xlink:href="img/sprite.svg#icon-arrow_up"></use></svg> <a class="call_you js_popup js_value" data-form="Блок -Кто мы-" href=".mod_main" onclick="gtag('event', 'clickdopphone', { 'event_category': 'Knopka3', 'event_action': 'Najatie3', });">Записаться</a>                  </div>
+              </div>
+              <div class="col-lg-6 col-md-5 hidden-sm"></div>
+            </div>
+          </div>
+        </div>
+        <div class="scroll_top js_move_to"> <svg class="icon icon-arrow_up"><use xlink:href="img/sprite.svg#icon-arrow_up"></use></svg> </div>
+      </section>
+      <section class="problem section">
+        <div class="problem__wrap">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 col-xs-12 col-sm-12">
+                <div class="problem__main">
+                  <div class="problem__text">
+                    <div class="problem__step">
+                      <div class="problem__title"> <svg class="icon icon-tabs"><use xlink:href="img/sprite.svg#icon-tabs"></use></svg> <svg class="icon icon-box_bottom"><use xlink:href="img/sprite.svg#icon-box_bottom"></use></svg>
+                        <ul class="problem__mob-prob-list js_mob_list">
+                          <li data-tab="tab_wrinkles"><span>Морщины</span></li>
+                          <li data-tab="tab_pigmentation"><span>Пигментация</span></li>
+                          <li data-tab="tab_oily_skin"><span>Жирная кожа</span></li>
+                          <li data-tab="tab_couperose"><span>Купероз</span></li>
+                          <li data-tab="tab_unwanted_hair"><span>Нежелательные <br> волосы</span></li>
+                          <li data-tab="tab_articulation"><span>Отеченость</span></li>
+                          <li data-tab="tab_dry_skin"><span>Сухая кожа</span></li>
+                        </ul>
+                        <div class="problem__title--layer"> <span>проблема</span>
+                          <div class="problem__btn-mob js_mob_open_list"> список <svg class="icon icon-footer_arr"><use xlink:href="img/sprite.svg#icon-footer_arr"></use></svg> </div>
+                        </div>
+                        <h3 class="current_tab tab_wrinkles"> <span>МОРЩИНЫ</span> видимые складки кожи,<br> потеря эластичности и упругости,<br> возрастные изменения. </h3>
+                        <h3 class="tab_pigmentation"> <span>Пигментация</span> светло коричневые и темно коричневые пятна, веснушки. </h3>
+                        <h3 class="tab_oily_skin"> <span>ЖИРНАЯ КОЖА</span> жирный блеск, широкие поры, воспаления на коже. </h3>
+                        <h3 class="tab_couperose"> <span>КУПЕРОЗ</span> расширенные, видимые сосуды и сосудистые звездочки красного цвета. </h3>
+                        <h3 class="tab_unwanted_hair"> <span>НЕЖЕЛАТЕЛЬНЫЕ ВОЛОСЫ</span> </h3>
+                        <h3 class="tab_articulation"> <span>ОТЕЧНОСТЬ</span> избыточное накопление жидкости, мешки под глазами. </h3>
+                        <h3 class="tab_dry_skin"> <span>СУХАЯ КОЖА</span> шелушения, ощущения стянутости, постоянная потребность в питательных кремах. </h3>
+                      </div>
+                    </div>
+                    <div class="problem__step">
+                      <ul class="problem__list tab_wrinkles current_tab">
+                        <li>Безинъекционная мезотерапия</li>
+                        <li>Термолифтинг</li>
+                        <li>Микротоковая терапия</li>
+                        <li>Альгинатная маска</li>
+                      </ul>
+                      <ul class="problem__list tab_pigmentation">
+                        <li>Пилинг</li>
+                        <li>Лазерная шлифовка</li>
+                        <li>Фототерапия</li>
+                        <li>Дермобразия</li>
+                      </ul>
+                      <ul class="problem__list tab_oily_skin">
+                        <li>Дезинкрустация</li>
+                        <li>Глубокая чистка (пилинги и шлифовка лица)</li>
+                      </ul>
+                      <ul class="problem__list tab_couperose">
+                        <li>Лечение лазером</li>
+                        <li>Электрокоагуляция</li>
+                        <li>Фототерапия</li>
+                        <li>Лимфодренаж</li>
+                      </ul>
+                      <ul class="problem__list tab_unwanted_hair">
+                        <li>Фототерапия</li>
+                        <li>Лазерное удаление</li>
+                        <li>Аппарат Элос</li>
+                      </ul>
+                      <ul class="problem__list tab_articulation">
+                        <li>Лимфодренажный массаж</li>
+                        <li>Альгинатная маска</li>
+                      </ul>
+                      <ul class="problem__list tab_dry_skin">
+                        <li>Маска с гиалуроном</li>
+                        <li>Биоревитализация</li>
+                        <li>Альгинатная маска</li>
+                      </ul>
+                    </div>
+                    <div class="problem__step">
+                      <div class="problem__result">
+                        <div class="problem__result--title">результат</div>
+                        <div class="problem__result--descr tab_wrinkles current_tab"> Глубокий лифтинг кожи (подтяжка) <br> Разглаживаются глубокие мимические морщины. <br> Омолаживающий эффект. </div>
+                        <div class="problem__result--descr tab_pigmentation"> Лицо приобретает ровный, персиковый цвет. </div>
+                        <div class="problem__result--descr tab_oily_skin"> Убираются воспаления, жирный блеск, очищаются поры от черных точек, кожа приобретает свежесть и убирается серый оттенок </div>
+                        <div class="problem__result--descr tab_couperose"> Снимается воспаление сосудов, исчезают видимые сосуды и звездочки красного цвета. </div>
+                        <div class="problem__result--descr tab_unwanted_hair"> Убираются нежелательные волосы ;-) </div>
+                        <div class="problem__result--descr tab_articulation"> Убирается отечность лица и мешки под глазами. </div>
+                        <div class="problem__result--descr tab_dry_skin"> Кожа становится бархатной на ощупь, восстанавливается нормальная работа обменных процессов. Оживление кожи. </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 hidden-xs hidden-sm">
+                <div class="problem__girl">
+                  <div class="problem__icons js_tab_for"> <img data-tab="tab_wrinkles" class="wrinkles" src="img/wrinkles.svg" alt="wrinkles"> <img data-tab="tab_pigmentation" class="pigmentation" src="img/pigmentation.svg" alt="pigmentation"> <img data-tab="tab_oily_skin" class="oily_skin"
+                      src="img/oily_skin.svg" alt="oily_skin"> <img data-tab="tab_couperose" class="couperose" src="img/couperose.svg" alt="couperose"> <img data-tab="tab_unwanted_hair" class="unwanted_hair" src="img/unwanted_hair.svg" alt="unwanted_hair">                    <img data-tab="tab_articulation" class="articulation" src="img/articulation.svg" alt="articulation"> <img data-tab="tab_dry_skin" class="dry_skin" src="img/dry_skin.svg" alt="dry_skin"> </div>
+                  <div class="problem__btn js-prob_btn">
+                  <svg class="icon icon-btn_list"><use xlink:href="img/sprite.svg#icon-btn_list"></use></svg> <br> показать<br> список </div>
+                  <div class="problem__hov-list js-hov_list">
+                    <div class="problem__closer-btn js-prob_btn"></div>
+                    <ul class="problem__problems js_tab_for">
+                      <li data-tab="tab_wrinkles"><span>Морщины</span></li>
+                      <li data-tab="tab_pigmentation"><span>Пигментация</span></li>
+                      <li data-tab="tab_oily_skin"><span>Жирная кожа</span></li>
+                      <li data-tab="tab_couperose"><span>Купероз</span></li>
+                      <li data-tab="tab_unwanted_hair"><span>Нежелательные волосы</span></li>
+                      <li data-tab="tab_articulation"><span>Отеченость</span></li>
+                      <li data-tab="tab_dry_skin"><span>Сухая кожа</span></li>
+                    </ul>
+                  </div>
+                  <div class="problem__girl-image" style="background-image: url(img/girl.svg);"></div>
+                </div>
+              </div>
+            </div>
+            <div class="problem__call-back">
+              <div class="problem__call-text"> Запишитесь сейчас и мы<br> <span>решим Вашу проблему</span> </div> <a class="call_you js_popup js_value" data-form="Блок -Проблемы и решения-" href=".mod_main" onclick="gtag('event', 'clickdopphone', { 'event_category': 'Knopka4', 'event_action': 'Najatie4', });">Записаться</a>              </div>
+          </div>
+        </div>
+      </section>
+      <section class="how section">
+        <div class="how__wrap" style="background-image: url(img/how_bg.svg);"> <svg class="icon icon-text"><use xlink:href="img/sprite.svg#icon-text"></use></svg>
+          <div class="container">
+            <div class="how__title"> Как это происходит </div>
+            <div class="row">
+              <div class="col-md-2"></div>
+              <div class="col-md-10">
+                <div class="how__stepper" style="background-image: url(img/dash_line.svg);">
+                  <ul>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="163px" height="173px">
+                <defs>
+                  <filter filterUnits="userSpaceOnUse" id="Filter_0" x="0px" y="0px" width="162px" height="172px"  >
+                    <feOffset in="SourceAlpha" dx="0" dy="16" />
+                    <feGaussianBlur result="blurOut" stdDeviation="5.385" />
+                    <feFlood flood-color="rgb(0, 0, 0)" result="floodOut" />
+                    <feComposite operator="atop" in="floodOut" in2="blurOut" />
+                    <feComponentTransfer><feFuncA type="linear" slope="0.51"/></feComponentTransfer>
+                    <feMerge>
+                      <feMergeNode/>
+                      <feMergeNode in="SourceGraphic"/>
+                    </feMerge>
+                  </filter>
+                  <linearGradient id="PSgrad_0" x1="70.711%" x2="0%" y1="70.711%" y2="0%">
+                    <stop offset="0%" stop-color="rgb(0,0,0)" stop-opacity="0.35" />
+                    <stop offset="100%" stop-color="rgb(0,0,0)" stop-opacity="0" />
+                  </linearGradient>
+                  <filter id="Filter_1">
+                    <feOffset in="SourceAlpha" dx="-0.707" dy="0.707" />
+                    <feGaussianBlur result="blurOut" stdDeviation="0" />
+                    <feFlood flood-color="rgb(255, 255, 255)" result="floodOut" />
+                    <feComposite operator="out" in="floodOut" in2="blurOut" result="compOut" />
+                    <feComposite operator="in" in="compOut" in2="SourceAlpha" />
+                    <feComponentTransfer><feFuncA type="linear" slope="0.32"/></feComponentTransfer>
+                    <feBlend mode="normal" in2="SourceGraphic" />
+                  </filter>
+                  <linearGradient id="PSgrad_1" x1="0%" x2="0%" y1="100%" y2="0%">
+                    <stop offset="0%" stop-color="rgb(115,103,240)" stop-opacity="1" />
+                    <stop offset="100%" stop-color="rgb(206,159,252)" stop-opacity="1" />
+                  </linearGradient>
+                  <filter filterUnits="userSpaceOnUse" id="Filter_2" x="76px" y="48px" width="27px" height="31px"  >
+                    <feOffset in="SourceAlpha" dx="0" dy="2" />
+                    <feGaussianBlur result="blurOut" stdDeviation="1.414" />
+                    <feFlood flood-color="rgb(0, 0, 0)" result="floodOut" />
+                    <feComposite operator="atop" in="floodOut" in2="blurOut" />
+                    <feComponentTransfer><feFuncA type="linear" slope="0.3"/></feComponentTransfer>
+                    <feMerge>
+                      <feMergeNode/>
+                      <feMergeNode in="SourceGraphic"/>
+                    </feMerge>
+                  </filter>
+
+                </defs>
+                <g filter="url(#Filter_0)">
+                  <path fill-rule="evenodd"  fill="rgb(88, 76, 168)"
+                        d="M127.126,104.935 L100.335,124.135 C95.816,127.374 89.430,127.374 83.582,124.135 L48.916,104.935 C43.068,101.696 38.647,95.711 37.319,89.234 L29.443,50.835 C28.114,44.357 30.080,38.372 34.599,35.133 L61.390,15.934 C65.909,12.695 72.295,12.695 78.143,15.934 L112.810,35.133 C118.657,38.372 123.078,44.357 124.407,50.835 L132.283,89.234 C133.611,95.711 131.645,101.696 127.126,104.935 Z"/>
+                </g>
+                <path fill="url(#PSgrad_0)"
+                      d="M127.126,104.935 L100.335,124.135 C95.816,127.374 89.430,127.374 83.582,124.135 L48.916,104.935 C43.068,101.696 38.647,95.711 37.319,89.234 L29.443,50.835 C28.114,44.357 30.080,38.372 34.599,35.133 L61.390,15.934 C65.909,12.695 72.295,12.695 78.143,15.934 L112.810,35.133 C118.657,38.372 123.078,44.357 124.407,50.835 L132.283,89.234 C133.611,95.711 131.645,101.696 127.126,104.935 Z"/>
+                <g filter="url(#Filter_1)">
+                  <path fill-rule="evenodd"  fill="url(#PSgrad_1)"
+                        d="M137.126,96.935 L110.335,116.135 C105.816,119.374 99.430,119.374 93.582,116.135 L58.916,96.935 C53.068,93.696 48.647,87.711 47.319,81.234 L39.443,42.835 C38.114,36.357 40.080,30.372 44.599,27.133 L71.390,7.934 C75.909,4.695 82.295,4.695 88.143,7.934 L122.810,27.133 C128.658,30.372 133.078,36.357 134.407,42.835 L142.282,81.234 C143.611,87.711 141.646,93.696 137.126,96.935 Z"/>
+                </g>
+                <path fill-rule="evenodd"  stroke="rgb(255, 255, 255)" stroke-width="2px" stroke-dasharray="4, 8" stroke-linecap="round" stroke-linejoin="round" opacity="0.369" fill="none"
+                      d="M121.696,85.589 L103.612,98.549 C100.561,100.735 96.251,100.735 92.303,98.549 L68.903,85.589 C64.956,83.403 61.972,79.363 61.076,74.991 L55.759,49.071 C54.862,44.699 56.189,40.659 59.240,38.473 L77.323,25.513 C80.374,23.327 84.685,23.327 88.632,25.513 L112.032,38.473 C115.979,40.659 118.963,44.699 119.860,49.071 L125.176,74.991 C126.073,79.363 124.746,83.403 121.696,85.589 Z"/>
+                <g filter="url(#Filter_2)">
+                  <text font-family="GothamPro" fill="rgb(255, 255, 255)" transform="matrix( 0.95925399215643, 0, 0.21381422480649, 1.04247676650474,85.2483525754224, 74.0097211980569)" font-size="36px">&#51;</text>
+                </g>
+              </svg></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="get section" style="background-image: url(img/gril_sect_bg.jpg);">
+        <div class="get__wrap">
+          <div class="container">
+            <div class="get__top"> <svg class="icon icon-gift"><use xlink:href="img/sprite.svg#icon-gift"></use></svg>
+              <div class="get__top--first">После</div>
+              <div class="get__top--second"><span>Первого</span> <span class="family">бесплатного</span> <span>посещения</span></div>
+              <div class="get__top--third">Вы получите:</div>
+            </div>
+            <div class="get__center">
+              <div class="row">
+                <div class="col-sm-3 col-lg-2 col-xs-6">
+                  <div class="get__icon"> <img src="img/icon1.svg" alt="">
+                    <div class="get__icon--text">Отдых</div>
+                  </div>
+                </div>
+                <div class="col-sm-3 col-lg-2 col-xs-6">
+                  <div class="get__icon"> <img src="img/icon2.svg" alt="">
+                    <div class="get__icon--text">Рекомендации</div>
+                  </div>
+                </div>
+                <div class="col-sm-3 col-lg-2 col-xs-6">
+                  <div class="get__icon"> <img src="img/icon3.svg" alt="">
+                    <div class="get__icon--text"> Квалифицированные<br> процедуры </div>
+                  </div>
+                </div>
+                <div class="col-sm-3 col-lg-6 col-xs-6">
+                  <div class="get__icon"> <img src="img/icon4.svg" alt="">
+                    <div class="get__icon--text"> Профессионального<br> специалиста </div>
+                  </div>
+                </div>
+              </div>
+              <div class="get__button"> <a href=".mod_main" data-form="Блок -Что вы получите-" class="call_back js_popup js_value" onclick="gtag('event', 'clickdopphone', { 'event_category': 'Knopka5', 'event_action': 'Najatie5', });">Записаться</a> </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="timer section" style="background-image: url(img/dots.png);">
+        <div class="timer__wrap">
+          <div class="container">
+            <h3 class="timer__header"> Ограниченное время на <br> <span>посещение кабинета</span> </h3>
+            <div class="row">
+              <div class="col-sm-7 col-md-6">
+                <div class="timer__timer">
+                  <div class="timer__title"> Примерное оставшееся время до <br> заполнения всех мест </div>
+                  <div class="timer__clock">
+                    <ul class="timer__items js_timer">
+                      <li class="cou_hours"></li>
+                      <li class="cou_min"></li>
+                      <li class="cou_sec"></li>
+                    </ul>
+                    <ul class="timer__name">
+                      <li>дней</li>
+                      <li>часов</li>
+                      <li>минут</li>
+                    </ul> <svg class="icon icon-arr_ico"><use xlink:href="img/sprite.svg#icon-arr_ico"></use></svg> </div>
+                </div>
+              </div>
+              <div class="col-sm-5 col-md-6">
+                <div class="timer__gift"> Все просто, на определенное время закрепляется индивидуальный косметолог и кабинет. Время наших специалистов на эту неделю подходит к концу. Успей подать заявку, пока еще есть место! <a href=".mod_main" class="call_you js_popup js_value"
+                    data-form="Блок -Время Ограничено-" onclick="gtag('event', 'clickdopphone', { 'event_category': 'Knopka6', 'event_action': 'Najatie6', });">Записаться</a> </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="g_map section">
+        <div id="right-panel" class="js_toggle_panel"></div>
+        <div id="map"></div> <input id="destination-input" class="controls g_map__input" type="text" placeholder="Введите Ваш адрес для показа маршрута">
+        <div id="mode-selector" class="controls g_map__input--types"> <label for="changemode-walking" title="пешком">
+      <input class="walking" type="radio" name="type" id="changemode-walking">
+    </label> <label for="changemode-transit" title="транспорт">
+      <input class="transit" type="radio" name="type" id="changemode-transit" checked="checked">
+    </label> <label for="changemode-driving" title="свое авто">
+      <input class="driving" type="radio" name="type" id="changemode-driving">
+    </label>
+          <div class="hide_panel js_toggle_direction"> <svg class="icon icon-footer_arr"><use xlink:href="img/sprite.svg#icon-footer_arr"></use></svg> </div>
+        </div>
+        <script>
+          function initMap()
+          {
+            var e = new google.maps.Map(document.getElementById("map"),
+            {
+              mapTypeControl: !1,
+              center: myPosition,
+              zoom: 16,
+              streetViewControl: !1,
+              fullscreenControl: !1,
+              scrollwheel: !1
+            });
+            myMarker = new google.maps.Marker(
+            {
+              position: myPosition,
+              map: e
+            }), new AutocompleteDirectionsHandler(e)
+          }
+
+          function AutocompleteDirectionsHandler(e)
+          {
+            this.map = e, this.originPlaceId = myId, this.destinationPlaceId = null, this.travelMode = "TRANSIT";
+            var t = document.getElementById("destination-input"),
+              i = document.getElementById("mode-selector");
+            this.directionsService = new google.maps.DirectionsService, this.directionsDisplay = new google.maps.DirectionsRenderer, this.directionsDisplay.setMap(e);
+            var o = new google.maps.places.Autocomplete(t,
+            {
+              placeIdOnly: !0
+            });
+            this.setupClickListener("changemode-walking", "WALKING"), this.setupClickListener("changemode-transit", "TRANSIT"), this.setupClickListener("changemode-driving", "DRIVING"), this.setupPlaceChangedListener(o, "DEST"), this.map.controls[google.maps.ControlPosition.TOP_LEFT].push(t), this.map.controls[google.maps.ControlPosition.TOP_LEFT].push(i), this.directionsDisplay.setPanel(document.getElementById("right-panel"))
+          }
+          var myPosition = {
+              lat: 31.9883677,
+              lng: 34.7724464
+            },
+            myId = "ChIJQ4e7q4CzAhURUxy7S8muULU",
+            panelDirection = document.getElementById("right-panel"),
+            panelTransport = document.getElementById("mode-selector"),
+            myMarker;
+          AutocompleteDirectionsHandler.prototype.setupClickListener = function(e, t)
+          {
+            var i = document.getElementById(e),
+              o = this;
+            i.addEventListener("click", function()
+            {
+              o.travelMode = t, o.route()
+            })
+          }, AutocompleteDirectionsHandler.prototype.setupPlaceChangedListener = function(e, t)
+          {
+            var i = this;
+            e.bindTo("bounds", this.map), e.addListener("place_changed", function()
+            {
+              var t = e.getPlace();
+              return t.place_id ? (i.destinationPlaceId = t.place_id, void i.route()) : void window.alert("пожалуйста выберите со списка")
+            })
+          }, AutocompleteDirectionsHandler.prototype.route = function()
+          {
+            if (this.destinationPlaceId)
+            {
+              var e = this;
+              this.directionsService.route(
+              {
+                origin:
+                {
+                  placeId: this.originPlaceId
+                },
+                destination:
+                {
+                  placeId: this.destinationPlaceId
+                },
+                travelMode: this.travelMode,
+                provideRouteAlternatives: !0
+              }, function(t, i)
+              {
+                "OK" === i ? (e.directionsDisplay.setDirections(t), panelDirection.classList.add("show_map"), panelTransport.classList.add("show_map"), myMarker.setMap(null)) : window.alert("НЕДОПУСТИМЫЙ МАРШРУТ")
+              })
+            }
+          };
+
+        </script>
+      </section>
+      <section class="footer section fp-auto-height">
+        <div class="footer__wrap">
+          <div class="footer__contacts"> <a href="mailto:info@dearia.co.il">info@dearia.co.il 
+<svg class="icon icon-mail"><use xlink:href="img/sprite.svg#icon-mail"></use></svg>
+</a> <a href="tel:0722798193">
+<svg class="icon icon-phone"><use xlink:href="img/sprite.svg#icon-phone"></use></svg>
+ 072-27-98-193</a> </div>
+          <div class="footer__go-top"> Ришен ле - Цион, Ул.Моше Леви 11,<br>Бизнес центр UMI, Этаж 3 ,кабинет 313. </div>
+          <div class="footer__buttons">
+            <div class="footer__logo"><a href="http://dearia.co.il">
+<svg class="icon icon-logo"><use xlink:href="img/sprite.svg#icon-logo"></use></svg>
+</a></div>
+            <div class="footer__call-back"> <a class="footer_callback js_popup js_value" data-form="Блок -Контакты-" href=".mod_main" onclick="gtag('event', 'clickdopphone', { 'event_category': 'Knopka7', 'event_action': 'Najatie7', });">Обратная связь 
+<svg class="icon icon-footer_arr"><use xlink:href="img/sprite.svg#icon-footer_arr"></use></svg>
+</a> </div>
+            <div class="footer__socials"> <a href="#">
+<svg class="icon icon-fb"><use xlink:href="img/sprite.svg#icon-fb"></use></svg>
+</a> <a href="#">
+<svg class="icon icon-vk"><use xlink:href="img/sprite.svg#icon-vk"></use></svg>
+</a> <a href="#">
+<svg class="icon icon-ok"><use xlink:href="img/sprite.svg#icon-ok"></use></svg>
+</a> <a href="#">
+<svg class="icon icon-int"><use xlink:href="img/sprite.svg#icon-int"></use></svg>
+</a> </div>
+          </div>
+          <div class="footer__copy">
+            <p> &#169; 2017 <span>Dearia.</span> </p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- END content -->
+    <!-- BEGIN scripts -->
+    <script type="text/javascript" src="lib/scrolloverflow.min.js"></script>
+    <script type="text/javascript" src="js/app.js?ver=1.04"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzUP0XTLNn4vaYPc1dpKIWu3Im7HfTXnI&libraries=places&language=ru&region=RU&callback=initMap"></script>
+    <!-- END scripts -->
+    <!-- BEGIN remarketing -->
+    <script type="text/javascript">
+      /* <![CDATA[ */
+      var google_conversion_id = 833137339;
+      var google_custom_params = window.google_tag_params;
+      var google_remarketing_only = true;
+      /* ]]> */
+
+    </script>
+    <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js"></script> <noscript><div style="display:inline;"><img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/833137339/?guid=ON&amp;script=0"/></div></noscript>
+    <!-- END remarketing -->
+  </body>
+
+</html>

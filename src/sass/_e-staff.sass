@@ -1,0 +1,73 @@
+.staff
+	background-color: rgb(95, 6, 108)
+	background-image: url(../img/line_1.svg),url(../img/line_2.svg)
+	background-repeat: no-repeat
+	background-size: contain
+	background-position: center
+	&__wrap
+		position: relative
+	&__move-slide
+		position: absolute
+		right: 20%
+		top: 0
+		width: 56px
+		height: 56px
+		border-radius: 50%
+		cursor: pointer
+		z-index: 2
+		text-align: center
+		padding-top: 19px
+		background: #e83360 center
+		span
+			display: inline-block
+			width: 20px
+			height: 20px
+			border: 2px solid #fff
+			border-left: transparent
+			border-bottom: transparent
+			opacity: 0.9
+	.next_slide
+		padding-right: 6px
+		span
+			transform: rotate(45deg)
+	.prev_slide
+		padding-left: 6px
+		span
+			transform: rotate(-135deg)
+	&__step
+		opacity: 0
+	&__item
+		width: 125px
+		height: 125px
+		position: relative
+		background-color: rgb(235, 236, 236)
+		border-radius: 50%
+		cursor: pointer
+		&::after
+			top: -12px
+			left: -12px
+			z-index: 1
+			position: absolute
+			content: ''
+			width: calc(100% + 24px)
+			height: calc(100% + 24px)
+			background-color: #ebecec
+			opacity: 0.1
+			border-radius: 50%
+		img
+			position: relative
+			z-index: 2
+			max-width: 100%
+			display: block
+			border-radius: 50%
+			box-shadow: 0px 17px 24px 0px rgba(0, 0, 0, 0.2)
+	&__decr
+		color: #ffc9c1
+		text-align: center
+		font-size: 16px
+		font-family: $MyriadProRegular
+		max-width: 130px
+		margin-top: 15px
+	&__second,&__last
+		margin-top: 120px
+

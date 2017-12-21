@@ -1,0 +1,102 @@
+<svg id="_1" data-name="1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="163" height="172" viewBox="0 0 163 172">
+  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""/>
+   </rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                           
+<?xpacket end="w"?></metadata>
+<defs>
+    <style>
+      .cls-1, .cls-2, .cls-4 {
+        fill-rule: evenodd;
+      }
+
+      .cls-1 {
+        fill: url(#linear-gradient);
+        filter: url(#filter);
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient-2);
+        filter: url(#filter-2);
+      }
+
+      .cls-3 {
+        font-size: 36px;
+        filter: url(#filter-3);
+        fill: #fff;
+        font-family: GothamPro;
+        font-weight: 800;
+      }
+
+      .cls-4 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+        stroke-dasharray: 4 8;
+        opacity: 0.37;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="2545.8" y1="2737.56" x2="2545.8" y2="2624.5" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#623aa2"/>
+      <stop offset="1" stop-color="#f97794"/>
+    </linearGradient>
+    <filter id="filter" x="2464" y="2611" width="163" height="172" filterUnits="userSpaceOnUse">
+      <feOffset result="offset" dy="16" in="SourceAlpha"/>
+      <feGaussianBlur result="blur" stdDeviation="5.385"/>
+      <feFlood result="flood" flood-opacity="0.51"/>
+      <feComposite result="composite" operator="in" in2="blur"/>
+      <feBlend result="blend" in="SourceGraphic"/>
+      <feImage preserveAspectRatio="none" x="2493.97" y="2624.5" width="103.66" height="113.06" result="image" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTAzLjY2IiBoZWlnaHQ9IjExMy4wNiIgdmlld0JveD0iMCAwIDEwMy42NiAxMTMuMDYiPgogIDxkZWZzPgogICAgPHN0eWxlPgogICAgICAuY2xzLTEgewogICAgICAgIG9wYWNpdHk6IDAuMzU7CiAgICAgICAgZmlsbDogdXJsKCNsaW5lYXItZ3JhZGllbnQpOwogICAgICB9CiAgICA8L3N0eWxlPgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJsaW5lYXItZ3JhZGllbnQiIHkxPSI0LjciIHgyPSIxMDMuNjYiIHkyPSIxMDguMzYiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwLjIiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIwLjgiIHN0b3Atb3BhY2l0eT0iMCIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPHJlY3QgY2xhc3M9ImNscy0xIiB3aWR0aD0iMTAzLjY2IiBoZWlnaHQ9IjExMy4wNiIvPgo8L3N2Zz4K"/>
+      <feComposite result="composite-2" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend-2" in2="blend"/>
+      <feFlood result="flood-2" flood-opacity="0.2"/>
+      <feComposite result="composite-3" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend-3" in2="blend-2"/>
+    </filter>
+    <linearGradient id="linear-gradient-2" x1="2556.8" y1="2729.56" x2="2556.8" y2="2616.5" xlink:href="#linear-gradient"/>
+    <filter id="filter-2" x="2504.97" y="2616.5" width="103.66" height="113.06" filterUnits="userSpaceOnUse">
+      <feGaussianBlur result="blur" in="SourceAlpha"/>
+      <feFlood result="flood" flood-color="#fff" flood-opacity="0.32"/>
+      <feComposite result="composite" operator="out" in2="blur"/>
+      <feOffset result="offset" dx="-0.707" dy="0.707"/>
+      <feComposite result="composite-2" operator="in" in2="SourceAlpha"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-3" x="2546" y="2660" width="22" height="31" filterUnits="userSpaceOnUse">
+      <feOffset result="offset" dy="2" in="SourceAlpha"/>
+      <feGaussianBlur result="blur" stdDeviation="1.414"/>
+      <feFlood result="flood" flood-opacity="0.3"/>
+      <feComposite result="composite" operator="in" in2="blur"/>
+      <feBlend result="blend" in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <path id="Эллипс_566_копия_5" data-name="Эллипс 566 копия 5" class="cls-1" d="M2592.06,2715.94l-26.79,19.19c-4.52,3.24-10.91,3.24-16.76,0l-34.66-19.19a23.9,23.9,0,0,1-11.6-15.71l-7.88-38.4c-1.33-6.47.64-12.46,5.16-15.7l26.79-19.2c4.52-3.23,10.91-3.23,16.75,0l34.67,19.2a23.907,23.907,0,0,1,11.6,15.7l7.87,38.4C2598.54,2706.71,2596.58,2712.7,2592.06,2715.94Z" transform="translate(-2464 -2611)"/>
+  <path id="Эллипс_566" data-name="Эллипс 566" class="cls-2" d="M2603.06,2707.94l-26.79,19.19c-4.52,3.24-10.91,3.24-16.76,0l-34.66-19.19a23.9,23.9,0,0,1-11.6-15.71l-7.88-38.4c-1.33-6.47.64-12.46,5.16-15.7l26.79-19.2c4.52-3.23,10.91-3.23,16.75,0l34.67,19.2a23.907,23.907,0,0,1,11.6,15.7l7.87,38.4C2609.54,2698.71,2607.58,2704.7,2603.06,2707.94Z" transform="translate(-2464 -2611)"/>
+  <text id="_1-2" data-name="1" class="cls-3" transform="matrix(0.959, 0, 0.214, 1.042, 88.889, 75.573)">1</text>
+  <path id="Эллипс_601" data-name="Эллипс 601" class="cls-4" d="M2587.7,2696.59l-18.09,12.96c-3.05,2.18-7.36,2.18-11.31,0l-23.4-12.96a16.132,16.132,0,0,1-7.82-10.6l-5.32-25.92c-0.9-4.37.43-8.41,3.48-10.6l18.08-12.96c3.05-2.18,7.36-2.18,11.31,0l23.4,12.96a16.146,16.146,0,0,1,7.83,10.6l5.32,25.92C2592.07,2690.36,2590.75,2694.4,2587.7,2696.59Z" transform="translate(-2464 -2611)"/>
+</svg>

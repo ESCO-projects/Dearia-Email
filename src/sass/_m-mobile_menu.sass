@@ -1,0 +1,53 @@
+.toggle_mnu
+	transform: translateX(0)!important
+	opacity: 1!important
+
+.mob_menu_wrap
+	position: fixed
+	z-index: 9999
+	height: 100vh
+	width: 100%
+	background-color: #2e294e
+	overflow: hidden
+	transform: translateX(102%)
+	transition: all 0.4s ease
+ul.mob_mnu
+	display: block
+	padding: 60px 20px 20px
+	position: relative
+	+rmin(1140)
+		display: none
+	+r(1140)
+		display: block
+	+r(480)
+		padding: 80px 15px 15px
+	li
+		min-height: 60px
+		margin: 3vh 0
+		+rh(700)
+			margin: 2vh 0
+		+rh(640)
+			min-height: 40px
+		+rh(580)
+			a
+				line-height: 1
+	a
+		transition: all 0.2s ease
+		display: block
+		height: 100%
+		text-align: center
+		color: #fff
+		font-size: 40px
+		font-family: $GothamProRegular
+		+r(640)
+			font-size: 30px
+		+r(480)
+			font-size: 28px
+		+r(360)
+			font-size: 24px
+	li.active
+		a
+			color: #ffc9c1
+			font-family: $GothamProBold
+
+

@@ -1,0 +1,243 @@
+@import vars
+
+
+
++r(1140)
+	#fp-nav
+		display: none
+	.iScrollVerticalScrollbar,.iScrollLoneScrollbar
+		width: 3px!important
+		transition-duration: 1s!important
+
+.scroll_top
+	position: fixed
+	bottom: 20px
+	right: 20px
+	background: #F0C874
+	width: 50px
+	height: 50px
+	text-decoration: none
+	border-radius: 35px
+	transition: all 0.3s ease
+	text-align: center
+	padding-top: 13px
+	cursor: pointer
+	opacity: 0
+	transform: translateX(100px)
+	+r(991)
+		right: 10px
+	+r(767)
+		display: none
+	&:hover
+		opacity: 1
+		.icon-arrow_up
+			animation-name: maxbounce
+			animation-iteration-count: infinite
+			animation-duration: 2s
+			animation-timing-function: linear
+	.icon-arrow_up
+		fill: #000000
+		font-size: 20px
+.scroll_top_unvisible
+	opacity: 0
+	transform: translateX(100px)
+.scroll_top_visible
+	transform: translateX(0)
+	opacity: 0.8
+
+.call_you
+	color: #fff
+	font-size: 16px
+	font-family: $MyriadProRegular
+	text-align: center
+	display: block
+	border-radius: 19px
+	background-image: linear-gradient(to left, rgb(232,51,96) 0%, rgb(255,132,132) 100%)
+	box-shadow: 0 0 18px 0 rgba(232, 51, 96, 0.4)
+	width: 160px
+	height: 39px
+	text-shadow: 0 1px 2px rgba(0,0,0, 0.4)
+
+.reg_btn
+	display: block
+	color: #FFF
+	font-size: 20px
+	padding-top: 13px
+	letter-spacing: 0.05em
+	text-align: center
+	font-family: $MyriadProRegular
+	text-transform: capitalize
+	border-radius: 2px
+	background-image: linear-gradient( 90deg, rgb(232,51,96) 0%, rgb(255,132,132) 100%)
+	box-shadow: 0px 0px 29px 0px rgba(232, 51, 96, 0.52)
+	width: 240px
+	height: 58px
+
+.call_back
+	display: block
+	padding-top: 12px
+	background-image: linear-gradient( 90deg, rgb(232,51,96) 0%, rgb(255,132,132) 100%)
+	box-shadow: 0px 5px 20px 0px rgba(232, 51, 96, 0.52)
+	width: 240px
+	height: 56px
+	border-radius: 28px
+	font-size: 20px
+	color: #fff
+	font-family: $GothamProMedium
+	text-align: center
+	margin: 0 auto
+
+.footer_callback
+	background: rgb(255, 132, 132) linear-gradient(-90deg, rgb(232, 51, 96) 0%, rgb(255, 132, 132) 100%)
+	box-shadow: 0px 0px 10px 0px rgba(232, 51, 96, 0.4)
+	width: 280px
+	height: 40px
+	border-radius: 20px
+	color: #fff
+	font-size: 18px
+	line-height: 2
+	letter-spacing: 1px
+	font-family: $MyriadProRegular
+	text-align: left
+	padding-left: 35px
+	.icon
+		font-size: 30px
+		float: right
+		fill: #fff
+		padding-right: 18px
+		padding-top: 7px
+
+.form_button
+	border-radius: 8px
+	background-image: linear-gradient( 90deg, rgb(232,51,96) 0%, rgb(255,132,132) 100%)
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25)
+	width: 239px
+	height: 40px
+	font-size: 16px
+	font-family: $GothamProMedium
+	color: #fff
+
+@keyframes maxbounce
+	0%
+		transform: translateY(0)
+	25%
+		transform: translateY(-5px)
+	50%
+		transform: translateY(0px)
+	75%
+		transform: translateY(-5px)
+	100%
+		transform: translateY(0)
+
+.open_mob_menu
+	position: fixed
+	right: -50px
+	top: 40%
+	width: 100px
+	height: 100px
+	background-color: #fff
+	border-radius: 50%
+	display: block
+	z-index: 99999
+	.mob_head
+		display: none
+	+r(900)
+		top: 0
+		right: 0
+		width: 100%
+		border-radius: 0
+		height: 50px
+		padding: 10px
+		.mob_head
+			float: left
+			display: inline-block
+			+r(767)
+				.mob_head__title
+					h1
+						font-size: 18px
+						line-height: 1
+						br
+							display: block
+			div
+				height: 50px
+				margin-left: 15px
+				float: left
+				+r(540)
+					margin-left: 5px!important
+			&__logo
+				img
+					display: block
+					max-width: 40px
+			&__title
+				+r(480)
+					display: none
+				h1
+					font-size: 26px
+					line-height: 1.2
+					font-family: $GothamProLight
+					font-weight: normal
+					br
+						display: none
+			&__button
+				a.call_you
+					height: 100%
+					margin: -10px 0 0
+					border-radius: 0
+					line-height: 1
+					padding-top: 7px
+					font-size: 18px
+					+r(480)
+						margin: -10px 12px 0!important
+		.menu_lines
+			margin: 3px 18px 0
+			float: right
+	.menu_lines
+		margin: 40px 0 0 15px
+		width: 24px
+		height: 30px
+		position: relative
+		cursor: pointer
+		+r(900)
+			&::before
+				height: 80px
+				left: -40px
+		&::before
+			position: absolute
+			content: ''
+			left: -20px
+			top: -40px
+			width: 150px
+			height: 100px
+			z-index: -1
+		div
+			width: 19px
+			height: 3px
+			float: right
+			margin: 0 0 8px
+			border-radius: 2px
+			background-color: #e83360
+			transition: all 0.2s
+			&:nth-child(2)
+				width: 24px
+	.menu_lines.active
+		div
+			width: 28px
+			&:first-child
+				transform: translateY(11px) rotate(45deg)
+			&:nth-child(2)
+				opacity: 0
+			&:last-child
+				transform: translateY(-11px) rotate(-45deg)
+	+rmin(1140)
+		display: none
+	+r(1140)
+		display: block
+
+
+
+
+
+
+
+
+

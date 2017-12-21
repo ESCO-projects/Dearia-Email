@@ -1,0 +1,167 @@
+.timer
+	background: rgb(95, 6, 108) linear-gradient(135deg, rgb(95, 6, 108) 0%, rgb(46, 41, 78) 100%)
+	position: relative
+	background-repeat: no-repeat
+	background-position: 70% 80%
+	background-size: 50%
+	+r(767)
+		background-position: 60% 30%
+		background-size: 500px
+		&::before,&::after
+			display: none
+	&::before,&::after
+		position: absolute
+		content: ''
+		width: 300px
+		height: 300px
+		border-radius: 50%
+		filter: blur(90px)
+	&::before
+		left: 25%
+		top: 20%
+		background-color: #e83360
+	&::after
+		right: 30%
+		top: 30%
+		background-color: #ffa1a7
+	&__header
+		font-size: 34px
+		color: #fff
+		font-family: $GothamProMedium
+		text-align: center
+		margin-bottom: 50px
+		text-shadow: 0 2px 4px rgba(0,0,0,0.4)
+		+r(480)
+			font-size: 25px
+		+r(360)
+			font-size: 21px
+		span
+			font-family: $GothamProLight
+	&__wrap
+		position: relative
+		z-index: 3
+		margin: 70px 0
+		padding-bottom: 30px
+		+r(767)
+			&::before,&::after
+				display: none
+		&::before,&::after
+			position: absolute
+			content: ''
+			width: 200px
+			height: 200px
+			border-radius: 50%
+			filter: blur(90px)
+			z-index: -1
+		&::before
+			left: 30%
+			bottom: 0
+			background-color: #ffa1a7
+		&::after
+			left: 35%
+			bottom: 2%
+			filter: blur(80px)
+			background-color: #e83360
+	&__timer
+		+r(991)
+			max-width: 400px
+			width: 100%
+			margin: 0 auto
+		+r(360)
+			max-width: 290px
+	&__title
+		font-size: 24px
+		font-family: $GothamProLight
+		color: #fff
+		+r(991)
+			font-size: 22px
+			text-align: center
+		+r(480)
+			font-size: 18px
+		+r(360)
+			font-size: 16px
+		span
+			font-family: $GothamProMedium
+	&__clock
+		max-width: 328px
+		position: relative
+		+r(767)
+			margin: 0 auto 30px
+		.icon-arr_ico
+			position: absolute
+			right: -220px
+			bottom: 20px
+			fill: #fff
+			font-size: 80px
+			z-index: -1
+			+r(1199)
+				display: none
+	&__items
+		width: 100%
+		height: 103px
+		margin: 20px auto 0
+		border: 2px solid rgb(255, 237, 0)
+		border-radius: 10px
+		box-shadow: 0 0 17.22px 3.78px rgba(255, 237, 0, 0.11),inset 0px -1px 27px 0 rgba(255, 237, 0, 0.3)
+		li
+			display: inline-block
+			width: 32%
+			height: 100%
+			font-size: 48px
+			line-height: 2
+			padding-left: 20px
+			color: #fff
+			font-family: $GothamProBold
+			text-shadow: 0px 3px 0px rgba(0, 0, 0, 0.15)
+			position: relative
+			+r(360)
+				line-height: 2.2
+				padding-left: 14px
+			&::after
+				position: absolute
+				content: ''
+				width: 1px
+				height: 75px
+				top: 13px
+				right: 0
+				background-color: #fff
+				opacity: 0.3
+			&:last-child
+				&::after
+					display: none
+	&__name
+		width: 100%
+		margin: 10px auto 0
+		li
+			display: inline-block
+			text-align: center
+			width: 32%
+			font-size: 16px
+			color: #fff
+			font-family: $GothamProLight
+	&__gift
+		width: 354px
+		height: auto
+		background-color: rgba(255,255,255, 0.8)
+		border-radius: 8px
+		position: relative
+		padding: 30px 30px 80px
+		font-size: 16px
+		font-family: $GothamProLight
+		color: #666666
+		z-index: 999
+		+r(991)
+			max-width: 350px
+			margin: 0 auto
+			width: 100%
+			padding: 15px 15px 30px
+		a.call_you
+			display: block
+			position: absolute
+			bottom: -20px
+			left: 95px
+			font-size: 20px
+			padding-top: 5px
+			+r(991)
+				left: calc(50% - 80px)
+

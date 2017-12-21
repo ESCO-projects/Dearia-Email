@@ -1,0 +1,10 @@
+<svg id="Слой_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60.8">
+    <style>
+        .st0{fill-rule:evenodd;clip-rule:evenodd;fill:none;stroke:url(#SVGID_1_);stroke-width:4;stroke-miterlimit:10}
+    </style>
+    <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="-.203" y1="60.609" x2="60.203" y2=".203">
+        <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+        <stop offset="1" stop-color="#e83360"/>
+    </linearGradient>
+    <path class="st0" d="M2 2h56v56.8H2V2z"/>
+</svg>

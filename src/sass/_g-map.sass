@@ -1,0 +1,225 @@
+$map_red: #e83360
+$map_add_col: #ff8484
+$map_grey: #e6e6e6
+$map_title_col: #000
+$map_bg_col: #fff
+
+#map
+	height: 100%
+	width: 100%
+	position: relative
+.g_map
+	position: relative
+	background-color: #EBE8DE
+	.controls
+		display: block
+	&__input
+		max-width: 700px
+		height: 38px
+		width: 100%
+		margin: 30px 75px
+		border-radius: 6px
+		background-color: rgb(255, 255, 255)
+		box-shadow: 0 4px 35px 0 rgba(0, 0, 0, 0.34)
+		padding: 0 20px
+		+r(900)
+			margin: 60px 75px 0
+		+r(840)
+			max-width: 480px
+		+r(650)
+			max-width: 360px
+			padding: 0 10px
+			margin: 60px 15px 0
+		+r(400)
+			max-width: 100%
+			margin: 60px 0 0
+			border-radius: 0
+		&--types
+			background-color: $map_red
+			position: absolute!important
+			left: 76px!important
+			top: 90px!important
+			width: 62px
+			height: 174px
+			border-radius: 8px
+			opacity: 0
+			transform: translateY(-200px)
+			transition: 0.5s ease
+			.hide_panel
+				margin: 0 auto
+				height: 40px
+				width: 40px
+				background-color: $map_red
+				border-radius: 50%
+				text-align: center
+				transition: all 0.3s ease
+				cursor: pointer
+				+r(650)
+					float: right
+					right: 15px
+					top: 5px
+					position: relative
+					z-index: 999
+					background-color: #fff
+					transform: rotate(90deg)
+					.icon
+						fill: $map_red
+				.icon
+					fill: #fff
+					font-size: 16px
+					margin: 12px auto 0
+			.hide_panel.toggle
+				transform: rotate(-90deg)
+				+r(650)
+					transform: rotate(180deg)!important
+			+r(900)
+				top: 98px!important
+			+r(650)
+				width: 360px
+				left: 15px!important
+				height: 50px
+				border-radius: 8px
+			+r(400)
+				width: 100%
+				left: 0!important
+				border-radius: 0
+			input
+				width: 0
+				position: relative
+				margin-bottom: 30px
+				&:active,&:focus,&:checked,&:hover
+					&::after
+						opacity: 1
+				&::after
+					position: absolute
+					opacity: 0.4
+					content: ''
+					width: 60px
+					height: 30px
+					left: 0
+					top: -10px
+					background: transparent no-repeat center
+					background-size: contain
+					cursor: pointer
+					transition: all 0.3s ease
+			input.walking
+				&::after
+					background-image: url(../img/map_men.svg)
+			input.transit
+				&::after
+					background-image: url(../img/map_bus.svg)
+			input.driving
+				&::after
+					background-size: 33px
+					background-image: url(../img/map_car.svg)
+			label
+				display: block
+				text-align: center
+				margin: 26px 0
+				height: 30px
+				cursor: pointer
+				position: relative
+				+r(650)
+					float: left
+					width: 25%
+					padding-left: 20px
+					margin: 20px 0 0
+					&::after
+						display: none
+				&:last-child
+					&::after
+						display: none
+				&::after
+					position: absolute
+					content: ''
+					width: 36px
+					height: 1px
+					background-color: $map_title_col
+					opacity: 0.2
+					bottom: -5px
+					left: 12px
+				.icon
+					fill: $map_title_col
+					opacity: 0.2
+					font-size: 28px
+.show_map
+	transform: translate(0)!important
+	opacity: 1!important
+
+#right-panel.show_direct
+	transform: translateY(-200px)!important
+	opacity: 0!important
+
+#right-panel
+	position: absolute
+	left: 133px
+	top: 90px
+	max-width: 645px
+	width: 100%
+	height: auto
+	z-index: 999!important
+	opacity: 0
+	transform: translateY(-200px)
+	transition: all 0.5s ease
+	border-radius: 0 8px 8px 0
+	background-color: $map_red
+	+r(900)
+		top: 98px
+	+r(840)
+		max-width: 420px
+	+r(650)
+		top: 148px
+		left: 15px
+		max-width: 360px
+		border-radius: 8px
+	+r(400)
+		max-width: 100%
+		left: 0
+		border-radius: 0
+	.adp-list
+		border: none
+		background-color: transparent
+		td
+			padding: 5px 3px
+		b
+			float: left
+			font-size: 14px
+			letter-spacing: -0.045em
+			font-family: $GothamProMedium
+			+r(840)
+				display: block
+				width: 100%
+		.adp-listinfo
+			span
+				text-align: right
+				float: right
+		.adp-listheader
+			cursor: text
+			color: #fff
+			text-align: center
+			font-size: 18px
+			line-height: 1
+			font-family: $GothamProMedium
+		.adp-listsel
+			background-color: $map_bg_col
+			border-radius: 3px
+			line-height: 1
+		.adp-summary-duration
+			margin-top: 2px
+			font-family: $GothamProRegular
+		ol
+			li
+				font-family: $GothamProLight
+				line-height: 1.5
+				transition: all 0.3s ease
+				border-radius: 3px
+				margin: 4px 0
+				&:hover
+					background-color: darken($map_bg_col, 10%)
+				.gm-arrow
+					margin: 5px 5px 3px
+				div
+					&:last-child
+						display: none
+	.adp
+		display: none

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 188 400">
+    <style>
+        .st0{display:none}.st1{display:inline}.st2,.st3{clip-path:url(#SVGID_2_);fill:url(#SVGID_3_)}.st3{fill:url(#SVGID_4_)}
+    </style>
+    <g id="Слой_2" class="st0">
+        <path class="st1" d="M-85 0h411v407H-85z"/>
+    </g>
+    <g id="Слой_4">
+        <defs>
+            <path id="SVGID_1_" d="M-1-1h189v400H-1z"/>
+        </defs>
+        <clipPath id="SVGID_2_">
+            <use xlink:href="#SVGID_1_" overflow="visible"/>
+        </clipPath>
+        <radialGradient id="SVGID_3_" cx="200" cy="202" r="192" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#e83360"/>
+            <stop offset="1" stop-color="#e83360" stop-opacity="0"/>
+        </radialGradient>
+        <circle class="st2" cx="200" cy="202" r="192"/>
+        <radialGradient id="SVGID_4_" cx="191.348" cy="206.652" r="87.348" gradientTransform="matrix(1.0533 0 0 1.071 -14.539 -8.876)" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#ff8484"/>
+            <stop offset=".921" stop-color="#ff8484" stop-opacity="0"/>
+        </radialGradient>
+        <ellipse class="st3" cx="187" cy="212.4" rx="92" ry="93.6"/>
+    </g>
+</svg>

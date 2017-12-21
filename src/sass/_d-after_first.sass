@@ -1,0 +1,117 @@
+.get
+	background: #fff no-repeat 130% center
+	+r(991)
+		background-position: -20%
+		background-size: cover
+	&__wrap
+		padding: 50px 0
+		+r(900)
+			padding: 80px 0
+		+r(480)
+			padding: 70px 0
+	&__top
+		text-align: center
+		position: relative
+		div
+			margin-bottom: 60px
+			+r(480)
+				margin-bottom: 30px
+	&__top--first
+		font-size: 32px
+		letter-spacing: 0.56em
+		text-transform: uppercase
+		position: relative
+		font-family: $GothamProMedium
+		background: #f97794 linear-gradient(to right, #f97794 10%, #623aa2 20%, #f97794 30%, #623aa2 40%, #f97794 50%, #623aa2 60%, #f97794 70%, #623aa2 80%, #f97794 90%, #623aa2 100%)
+		background-size: 400% 400%
+		background-clip: text
+		display: inline-block
+		background-clip: text
+		text-fill-color: transparent
+		-webkit-background-clip: text
+		-webkit-text-fill-color: transparent
+		animation: shine 22s linear infinite
+		z-index: 2
+	.icon-gift
+		z-index: 1
+		fill: #cdcdcd
+		position: absolute
+		font-size: 77px
+		top: -9px
+		left: calc(50% - 47px)
+	&__top--second
+		font-size: 32px
+		font-family: $MyriadProRegular
+		span.family
+			font-family: $GothamProMedium
+			color: #000
+		span
+			&:last-child
+				color: #000
+			&:first-child
+				color: #e83360
+	&__top--third
+		color: #9a9a9a
+		font-family: $GothamProLight
+		font-size: 24px
+		letter-spacing: 0.2em
+		text-transform: uppercase
+		position: relative
+		&::after
+			position: absolute
+			left: 50%
+			top: -30px
+			content: ''
+			width: 1px
+			height: 22px
+			background-color: #9a9a9a
+	&__icon
+		position: relative
+		opacity: 0
+		+r(900)
+			opacity: 1
+			animation: none!important
+		+r(767)
+			width: 100px
+			margin: 0 auto 30px
+			img
+				margin: 0 auto
+		+r(480)
+			width: 140px
+			text-align: center
+			img
+				max-width: 60px
+				height: 75px
+			&::after
+				left: 18px
+				width: 70px
+				height: 70px
+		+r(360)
+			width: 130px
+		img
+			position: relative
+			z-index: 3
+			max-width: 80px
+			height: 90px
+		&::after
+			position: absolute
+			top: 20px
+			left: -24px
+			content: ''
+			border-radius: 50%
+			background-color: rgb(245, 245, 245)
+			box-shadow: -12.728px 12.728px 27px 0px rgba(0, 0, 0, 0.1)
+			width: 88px
+			height: 88px
+		&--text
+			font-size: 16px
+			margin-top: 20px
+			color: #000
+			font-family: $GothamProLight
+			+r(480)
+				font-size: 15px
+			+r(360)
+				font-size: 14px
+	&__button
+		margin-top: 55px
+
